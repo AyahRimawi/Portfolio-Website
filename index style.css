@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: cursive;
 }
 /* navbar starts */
 header{
@@ -17,8 +18,8 @@ header{
     display: flex;
     align-items: center;}
 .pic{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     flex: 0 0 auto;}
 img{
     width: 100%;
@@ -29,12 +30,14 @@ img{
     color: rgba(198, 117, 19, 0.727);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.8em;}
+    font-size: 1.8em;
+    text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);}
 .navigation a{
     margin: 10px;
     font-size: 1.1em;
     text-decoration: none;
     color: rgba(198, 117, 19, 0.727);
+    text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);
     font-weight: 700;
     transition: 0.9s ease;}
 .navigation a:hover{
@@ -62,6 +65,7 @@ section{
     font-weight: 500;}
 .begin h1{
     color: rgba(198, 117, 19, 0.727);
+    text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);
     font-size: 3em;
     font-weight: 700;
     margin: 0.5em 0;}
@@ -86,6 +90,7 @@ section{
     transform: translatex(7px);}
 .social a{
     color: rgb(211, 143, 40);
+    text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);
     font-size: 1.5em;
     margin-right: 20px;
     transition: 0.62s ease-in;}
@@ -182,3 +187,79 @@ img{
     height: 200px;
     margin-bottom: 10px;}
 /* Education section end */
+
+/* Experience section starts */
+#Experience h1{
+    margin: auto;
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    border-radius: 10px;
+    font-size: 2.3em;
+    color: rgba(198, 117, 19, 0.727);
+    box-shadow: 3px 6px 14px  rgba(194, 117, 19, 0.7);}
+.container{
+    position: relative;
+    width: 700px;}
+.company{
+    font-weight: 700;
+    text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);}
+#Experience .itg{
+    display: inline-block;
+    width: 700px;}
+.container .description1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    background-color: rgba(251, 250, 221,0.82);
+    color: rgba(198, 117, 19);
+    opacity: 0;
+    transition: opacity 0.5s;}
+.description1{
+    position: absolute;
+    top: 50%;
+    left: 50;
+margin-top: 10px;}
+.container:hover .description1{
+    opacity: 1;}
+ul{
+    list-style: none;}
+.work .line{
+    text-decoration: underline;
+    font-weight: 700;
+    text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);}
+.work{
+    padding-bottom: 5px;
+    text-align: left;
+    margin: 12px 15px;
+    font-size: 1.15em;}
+/* Experience section end */
+
+/* Contact section starts */
+.footer{
+    background-color: rgba(251, 250, 221);
+    color: rgba(198, 117, 19, 0.727);
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 150px;}
+.logo-fo{
+    width: 50px;
+    height: 50px;
+    flex: 0 0 auto;}
+.text-fo{
+    text-align: center;
+    margin-top: 4px;
+    padding-top: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);}
