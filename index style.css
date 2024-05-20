@@ -273,15 +273,11 @@ ul{
 .img-proj:hover{
     box-shadow: 5px 8px 18px rgba(194, 117, 19, 0.7);
     transform: translatex(7px);}
-
 .card-proj{
     width: 75%;
     height: 75%;}
 .description-proj{
     margin-top: 10px;}
-
-
-
 /* Projects section end */
 
 /* Contact section starts */
@@ -310,39 +306,8 @@ ul{
 /* Contact section end */
 
 .hr{
-        margin: 0px 325px;
-        color: rgba(198, 117, 19, 0.727);
-        border-top: 10px solid;
-        opacity: 0.15;
-        border-radius: 50%;
-}
-
-@media (max-width: 1024px) {
-.navigation .nav-tooggle{
-    display: none;
-    margin-left: 100px; ;
-}
-
-
-
-header{
-    font-size: 12px !important;
-    margin: 4px !important;
-    padding: 5px 58px;
-    display: flex;
-    justify-content: flex-start;}
-
-    .first{
-        margin-left: 150px !important;
-        padding: 0 !important;
-        font-size: 0.75em !important;
-        align-items: normal;
-    }
-section h1{
-    display: inline-block;
-    width: 100% !important;
-    padding: 4px;
-    margin: 10px;
-    border-radius: 4px;
-    font-size: 20px !important;}
-}
+    margin: 0px 325px;
+    color: rgba(198, 117, 19, 0.727);
+    border-top: 10px solid;
+    opacity: 0.15;
+    border-radius: 50%;}
