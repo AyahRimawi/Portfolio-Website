@@ -5,61 +5,51 @@
     font-family: cursive;
 }
 /* navbar starts */
-header{
+nav{
+    position: fixed;}
+.navbar-expand-lg{
     background-color: rgba(251, 250, 221);
     width: 100%;
-    position: fixed;
-    z-index: 1000;
+    position: fixed !important;
+    z-index: 1000;}
+#logo{
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 0px 150px;
-    margin: 0;}
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;}
-.pic{
-    width: 40px;
-    height: 40px;
-    flex: 0 0 auto;}
-.img-logo{
-    width: 100%;
-    height: 100%;}
+    justify-content: space-between;
+    margin: 0 100px;}
 .name{
     margin-left: 10px;
-    text-decoration: none;
     color: rgba(198, 117, 19, 0.727);
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.8em;
-    text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);}
-.navigation a{
-    margin: 10px;
     font-size: 1.1em;
+    text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);}
+.container-fluid .nav-link{
+    margin-left: 5%;
+    font-size: 1em;
     text-decoration: none;
     color: rgba(198, 117, 19, 0.727);
     text-shadow: 3px 6px 14px rgba(194, 117, 19, 0.7);
     font-weight: 700;
-    transition: 0.9s ease;}
-.navigation a:hover{
+    transition: 0.7s ease;}
+#navbarNav a:hover{
     color: rgba(190, 110, 19, 1);
     text-decoration: underline;
-    font-size: 1.3em;
-    transform: scale(1.1);}
+    font-size: 1.05em;
+    transform:scale(1.1);}
+#navbarSupportedContent{
+    margin-left: 400px;}
     /* navbar end */
 
 /* hero section starts */
 section{
-    padding: 100px 250px;}
+    padding: 150px 250px;}
 .begin{
     width: 100%;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     background: url(gold.jpg) no-repeat;
     background-size: contain;
     background-position: right;
+    background-position-y: 50px;
     background-attachment: scroll;}
 .begin h2{
     color: black;
@@ -80,7 +70,7 @@ section{
     font-size: 1em;
     font-weight: 600;
     display: inline-block;
-    padding: 0.9375em;
+    padding: 0.9em;
     letter-spacing: 1px;
     border-radius: 15px;
     margin: 25px 0;
@@ -104,7 +94,7 @@ section{
 
 /* about section starts */
 .first{
-    padding: 150px 250px;
+    padding: 150px 150px;
     text-align: center;}
 #About h1{
     margin: auto;
@@ -113,6 +103,7 @@ section{
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 75px;
+    margin-top: 40px;
     font-size: 2.3em;
     color: rgba(198, 117, 19, 0.727);
     box-shadow: 3px 6px 14px  rgba(194, 117, 19, 0.7);}
@@ -159,6 +150,9 @@ margin-bottom: 20px;}
     height: 100%;}
 .cards{
     padding: 80px 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;}
 #Education h1{
     margin: auto;
@@ -175,8 +169,7 @@ margin-bottom: 20px;}
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;}
+    flex-direction: row;}
 .card{
     background-color: rgb(237, 237, 234);
     width: 20em;
@@ -222,7 +215,7 @@ margin-bottom: 20px;}
 #Experience .itg{
     display: inline-block;
     width: 700px;
-opacity: 1;}
+    opacity: 1;}
 .container .description1{
     position: absolute;
     top: 0;
@@ -233,8 +226,7 @@ opacity: 1;}
     background-color:  rgba(255, 255, 255,0.82);
     color:black;
     box-shadow: 3px 6px 14px  rgba(194, 117, 19, 0.7);
-    opacity: 1;
-    transition: opacity 0.5s;}
+    opacity: 1;}
 .description1{
     position: absolute;
     top: 50%;
@@ -304,6 +296,10 @@ ul{
     width: 50px;
     height: 50px;
     flex: 0 0 auto;}
+    .logo-fo img{
+        width: 100%;
+        height: 100%;
+    }
 .text-fo{
     text-align: center;
     margin-top: 4px;
@@ -322,16 +318,14 @@ ul{
 
     
 @media (max-width: 1024px) {
-    .navigation .nav-tooggle{
-        display: none;
-        margin-left: 100px; ;}
-    header{
-        font-size: 12px !important;
-        margin: 4px !important;
-        padding: 5px 58px;
-        display: flex;
-        justify-content: flex-start;}
-    
+    *{
+        margin: 0 !important;
+        padding: 0;
+        text-align: center;
+    }
+    .begin{
+        
+    }
     .first{
             margin-left: 150px !important;
             padding: 0 !important;
@@ -355,24 +349,8 @@ ul{
         margin-left: 150px !important;
         padding: 0 !important;
         font-size: 0.75em !important;
-        align-items: normal;
-         
-    }
-    .cards .content{
-        display: flex;
-        flex-direction: column;
-        width: 100px;
-        height: 200px;
-        padding: 3px 3px !important;
-        margin-left: 0px !important;
-        padding: 0 !important;
-        font-size: 1px !important;
-        align-items: start;
-        justify-content: flex-start;
-        flex-wrap: wrap; 
-        margin-right: 40px;
-    }
-    
+        align-items: normal;}
+ 
     .card{
         width: 200px;
         height: 800px;
@@ -383,7 +361,7 @@ ul{
         padding: 0 !important;
         align-items: center; 
         justify-content: center;
-    margin-right: 0;}
+        margin-right: 0;}
    
     .card .description h5 span{
     font-size: 10px !important;
@@ -436,12 +414,5 @@ margin: 0;
 .photo-proj{
     padding:0 10px;
 }
-
-
-
-
-
-
-
 
 }
